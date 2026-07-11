@@ -21,8 +21,8 @@ emotion_labels = [
     'suicide intent', 'worthlessness'
 ]
 
-st.title("Multi-label Emotion Detection Demo 🎭")
-st.write("Enter an English sentence to see what emotions the AI detects!")
+st.title("Multi-label Emotion Detection Demo 🎭 (Negative Emotion) ")
+st.write("Enter a sentence to see what negative emotions (like sadness, loneliness, or anxiety) the AI detects!")
 
 text = st.text_area("Input Text:", placeholder="Example: I feel so lonely and sad...")
 
