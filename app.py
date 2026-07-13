@@ -5,8 +5,7 @@ from transformers import RobertaForSequenceClassification, RobertaTokenizer
 # Cache the model so it only loads once from Hugging Face
 @st.cache_resource
 def load_model():
-    # Kéo model thẳng từ repo Hugging Face của em
-    # NHỚ THAY 'your-username' thành tên tài khoản Hugging Face của em (ví dụ: 'tina1803')
+    # Kéo model thẳng từ repo Hugging Face 
     model_id = "tina1803/emotion-roberta"
     model = RobertaForSequenceClassification.from_pretrained(model_id)
     tokenizer = RobertaTokenizer.from_pretrained(model_id)
